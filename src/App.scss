@@ -1,0 +1,44 @@
+@import './scss/mixins';
+
+header {
+    nav {
+        ul {
+            list-style: none;
+            @include flexbox();
+            gap: 25px;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.uiFeatures {
+    @include flexbox();
+}
+
+.container {
+    @include flexbox();
+    margin-top: 100px;
+    flex-direction: column;
+    border: 3px solid blue;
+    padding: 20px 0;
+
+    .features {
+        @include flexbox();
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        padding: 10px;
+        @include flexbox();
+        flex-direction: column;
+        &.invalid {
+            border: 1px solid red;
+        }
+    }
+}

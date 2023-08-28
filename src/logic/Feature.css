@@ -1,0 +1,9 @@
+.feature {
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}/*# sourceMappingURL=Feature.css.map */
